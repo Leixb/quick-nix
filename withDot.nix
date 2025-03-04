@@ -2,10 +2,14 @@
 with builtins;
 let
   names = attrNames pkgs;
+  lib = pkgs.lib;
   gen = selected:
     let
       drv = pkgs.mkShell {
         inherit (selected) inputsFrom packages;
+        name = if (selected.inputsFrom == [])
+          then "nix-shell-env"
+          else lib.concatStringsSep "-" (map (v: v.pname or v.name or "unknown") selected.inputsFrom);
       };
       mkAttrs = isInputs: (map
         (n:
