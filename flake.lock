@@ -1,24 +1,39 @@
 {
   "nodes": {
-    "nixpkgs": {
+    "bscpkgs": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
       "locked": {
-        "lastModified": 1741037377,
-        "narHash": "sha256-SvtvVKHaUX4Owb+PasySwZsoc5VUeTf1px34BByiOxw=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "02032da4af073d0f6110540c8677f16d4be0117f",
-        "type": "github"
+        "lastModified": 1740746160,
+        "narHash": "sha256-gjhWwD7IHRaz7p5V4MTDXBYuu146VqSXUZwNww1tIx4=",
+        "owner": "~rodarima",
+        "repo": "bscpkgs",
+        "rev": "c4583f787d535d4bc7c7805738f77abac702f130",
+        "type": "sourcehut"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
+        "owner": "~rodarima",
+        "repo": "bscpkgs",
+        "type": "sourcehut"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1740828860,
+        "narHash": "sha256-cjbHI+zUzK5CPsQZqMhE3npTyYFt9tJ3+ohcfaOF/WM=",
+        "path": "/nix/store/7g9h6nlrx5h1lwqy4ghxvbhb7imm3vcb-source",
+        "rev": "303bd8071377433a2d8f76e684ec773d70c5b642",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
       }
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "bscpkgs": "bscpkgs"
       }
     }
   },

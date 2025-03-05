@@ -1,8 +1,9 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs.bscpkgs.url = "sourcehut:~rodarima/bscpkgs";
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, bscpkgs }:
     let
+      nixpkgs = bscpkgs.inputs.nixpkgs;
       supportedSystems = [ "x86_64-linux" "i686-linux" "aarch64-linux" "riscv64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
     in
@@ -11,6 +12,7 @@
         let
           pkgs = import nixpkgs {
             inherit system;
+            overlays = [ bscpkgs.overlays.default ];
           };
         in
         import ./withDot.nix { inherit pkgs; }
