@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1740746160,
-        "narHash": "sha256-gjhWwD7IHRaz7p5V4MTDXBYuu146VqSXUZwNww1tIx4=",
+        "lastModified": 1749650500,
+        "narHash": "sha256-2MHfVPV6RA7qPSCtXh4+KK0F0UjN+J4z8//+n6NK7Xs=",
         "owner": "~rodarima",
         "repo": "bscpkgs",
-        "rev": "c4583f787d535d4bc7c7805738f77abac702f130",
+        "rev": "9d1944c658929b6f98b3f3803fead4d1b91c4405",
         "type": "sourcehut"
       },
       "original": {
@@ -20,10 +20,10 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1740828860,
-        "narHash": "sha256-cjbHI+zUzK5CPsQZqMhE3npTyYFt9tJ3+ohcfaOF/WM=",
-        "path": "/nix/store/7g9h6nlrx5h1lwqy4ghxvbhb7imm3vcb-source",
-        "rev": "303bd8071377433a2d8f76e684ec773d70c5b642",
+        "lastModified": 1736867362,
+        "narHash": "sha256-i/UJ5I7HoqmFMwZEH6vAvBxOrjjOJNU739lnZnhUln8=",
+        "path": "/nix/store/2csx2kkb2hxyxhhmg2xs9jfyypikwwk6-source",
+        "rev": "9c6b49aeac36e2ed73a8c472f1546f6d9cf1addc",
         "type": "path"
       },
       "original": {
