@@ -1,8 +1,9 @@
 { pkgs }:
-with builtins;
 let
+  inherit (builtins) attrNames getAttr listToAttrs;
+  inherit (pkgs) lib;
+
   names = attrNames pkgs;
-  lib = pkgs.lib;
   gen = selected:
     let
       drv = pkgs.mkShell {
